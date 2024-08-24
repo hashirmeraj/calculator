@@ -1,0 +1,62 @@
+/* styles.css */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 360px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+    background-color: #111;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    width: 70px;
+    /* Set a fixed width for circular shape */
+    height: 70px;
+    /* Set the height equal to the width */
+    font-size: 1.5em;
+    border-radius: 50%;
+    /* Makes the button circular */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-light {
+    background-color: #e0e0e0;
+}
+
+.btn-warning {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.zero-btn {
+    grid-column: span 2;
+    width: 100%;
+    /* Span two columns */
+    height: 70px;
+    /* Keep the height the same for consistency */
+    border-radius: 35px;
+    /* Keep the radius half of the height */
+}
